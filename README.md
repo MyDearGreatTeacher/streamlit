@@ -1,5 +1,6 @@
 # streamlit
-
+- 教科書[輕量又漂亮的 Python Web 框架 - Streamlit AI 時代非學不可](https://www.tenlong.com.tw/products/9786267383988?list_name=srh)
+- [CONTENT](CONTENT.MD)
 # streamlit_1.py
 ```python
 import streamlit as st
@@ -20,9 +21,49 @@ st.markdown("Markdown支援表情符號 :smile:")
 
 ```
 
-# streamlit_1.py
+# 
 ```python
+# 第三章/line_chart.py
+import streamlit as st
+import pandas as pd
 
+# 定義資料,以便創建資料框
+data = {
+    '月份':['01月', '02月', '03月'],
+    '1號門店':[200, 150, 180],
+    '2號門店':[120, 160, 123],
+    '3號門店':[110, 100, 160],
+}
+# 根據上面創建的data，創建資料框
+df = pd.DataFrame(data)
+# 定義資料框所用的新索引
+index = pd.Series([1, 2, 3,], name='序號')
+# 將新索引應用到資料框上
+df.index = index
+
+st.header("A888168門店數據")
+# 使用write()方法展示資料框
+st.write(df)
+st.header("折線圖")
+
+st.subheader("設置x參數")
+# 通過x指定月份所在這一列為折線圖的x軸
+st.line_chart(df, x='月份')
+
+
+
+# 修改df，用月份列作為df的索引，替換原有的索引
+df.set_index('月份', inplace=True)
+
+st.subheader("設置y參數")
+# 通過y參數篩選只顯示1號門店的資料
+st.line_chart(df, y='1號門店')
+# 通過y參數篩選只顯示2、3號門店的資料
+st.line_chart(df, y=['2號門店','3號門店'])
+
+st.subheader("設置width、height和use_container_width參數")
+# 通過width、height和use_container_width指定折線圖的寬度和高度
+st.line_chart(df, width=300, height=300, use_container_width=False)
 ```
 
 # streamlit_1.py
