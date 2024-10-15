@@ -95,6 +95,11 @@ st.line_chart(df, width=300, height=300, use_container_width=False)
 - [github](https://github.com/tylerjrichards/Streamlit-for-Data-Science/blob/main/huggingface_demo/streamlit_app.py)
 - [CONTENT1](CONTENT1.MD)
 ### Streamlit-for-Data-Science/huggingface_demo/streamlit_app.py
+
+```
+pip install huggingface_hub
+pip install openai
+```
 ```python
 import openai
 import streamlit as st
