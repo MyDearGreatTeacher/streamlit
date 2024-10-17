@@ -70,6 +70,8 @@ st.line_chart(df, width=300, height=300, use_container_width=False)
 
 # 觀摩學習[Remove background from your image](https://bgremoval.streamlit.app/)
 - [GITHUB](https://github.com/tyler-simons/BackgroundRemoval/tree/main)
+- 要先裝 rembg == > pip install rembg
+- https://github.com/danielgatis/rembg
 ```python
 import streamlit as st
 from rembg import remove
