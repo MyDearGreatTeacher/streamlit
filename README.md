@@ -1,6 +1,9 @@
 # streamlit
 - [Streamlit documentation](https://docs.streamlit.io/)
 # 教科書
+- [Streamlit for Data Science: Create interactive data apps in Python , Second Edition](https://www.packtpub.com/en-us/product/streamlit-for-data-science-9781803232959)
+  - [Streamlit實戰指南:使用Python創建交互式數據應用 ](https://www.tenlong.com.tw/products/9787121484520?list_name=lv)
+  - [GITHUB](https://github.com/tylerjrichards/Streamlit-for-Data-Science/tree/main)
 - 教科書[輕量又漂亮的 Python Web 框架 - Streamlit AI 時代非學不可](https://www.tenlong.com.tw/products/9786267383988?list_name=srh)
 - [CONTENT](CONTENT.MD)
 # streamlit_1.py
